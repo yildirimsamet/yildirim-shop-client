@@ -1,0 +1,86 @@
+.cardWrapper {
+  width: 250px;
+  
+  margin: 15px 0;
+  position: relative;
+}
+.productHeader > p {
+  height: 40px;
+  overflow: hidden;
+}
+.delIcon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}
+.zoom {
+  width: 250px;
+  height: 360px;
+  background: url("https://cdn.dsmcdn.com/mweb/master/product-placeholder.6dd40f981c7c0292fec5160d3b067fbb.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.productImg {
+  transition: 0.3s ease all;
+  width: 100%;
+  width: 250px;
+  height: 360px;
+}
+.productImg:hover {
+  transform: scale(1.1);
+}
+.stars {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #666;
+  clear: both;
+  direction: ltr;
+  position: relative;
+  float: left;
+  height: 17px;
+  width: 76px;
+  background: url("/images/stars_fill.svg") repeat-x;
+}
+.score {
+  background: url("/images/stars.svg") repeat-x;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #666;
+  direction: ltr;
+  display: block;
+  height: 17px;
+}
+.cargoBadge,
+.rushBadge {
+  position: absolute;
+  z-index: 12;
+  color: whitesmoke;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px;
+  border-radius: 3px;
+
+  text-transform: uppercase;
+  text-align: center;
+  background: rgba(104, 102, 102, 0.849);
+}
+.cargoBadge {
+  top: 0;
+  left: 0;
+}
+.rushBadge {
+  top: 0;
+  right: 0;
+  background: rgba(190, 74, 54, 0.849);
+}

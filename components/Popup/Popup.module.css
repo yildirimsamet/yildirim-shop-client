@@ -1,0 +1,35 @@
+.popupWrapper{
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    background: white;
+    box-shadow: 0 0 5px lightgray;
+    padding-bottom: 50px;
+    /* background: red; */
+    z-index: 123;
+    width: 500px;
+}
+.popupHeader>h3{
+    position: relative;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+}
+.closeIcon{
+    position: absolute;
+    right: 15px;
+    color: crimson;
+cursor: pointer;
+}
+.popupContent{
+    margin-top: 35px;
+}
+@media screen and (max-width:700px){
+    .popupWrapper{
+        width: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}

@@ -1,0 +1,29 @@
+.asideWrapper {
+  margin-top: 15px;
+  position: fixed;
+
+  /* top: 65px; */
+}
+.categoryList {
+  max-height: 800px;
+  overflow-y: scroll;
+  padding-right: 3px;
+}
+.categoryList::-webkit-scrollbar {
+  width: 7px;
+}
+.categoryList::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey;
+}
+.categoryList::-webkit-scrollbar-thumb {
+  background: rgba(107, 106, 106, 0.616);
+  border-radius: 10px;
+}
+@media only screen and (max-width:700px){
+  .asideWrapper{
+    width: 100%;
+  }
+  .categoryList{
+      display: none;
+  }
+}

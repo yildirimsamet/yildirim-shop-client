@@ -1,0 +1,123 @@
+.productWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+}
+.productMain {
+  display: flex;
+}
+.productMainLeftImages {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  overflow: hidden;
+}
+.productsDesc {
+  width: 450px;
+}
+.leftImgs {
+  width: 90px;
+  margin-bottom: 20px;
+}
+.productsMainMainImg {
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+}
+.productMainLeftImagesMobile {
+  display: none;
+}
+.productsMainMainImg > img {
+  transition: 0.4s ease all;
+}
+.productsMainMainImg:hover > img {
+  transform: scale(1.2);
+}
+.productsDesc {
+  margin-left: 25px;
+}
+.stars {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #666;
+  clear: both;
+  direction: ltr;
+  position: relative;
+  float: left;
+  height: 17px;
+  width: 76px;
+  background: url("/images/stars_fill.svg") repeat-x;
+}
+.score {
+  background: url("/images/stars.svg") repeat-x;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #666;
+  direction: ltr;
+  display: block;
+  height: 17px;
+}
+
+.bottomProductsInner {
+  display: flex;
+}
+.bottomProductsImgs {
+  width: 150px;
+}
+
+.bottomProducts {
+  width: 975px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+  .bottomProductsImgs {
+    width: 100px;
+  }
+  .bottomProductsInner {
+    overflow-x: scroll;
+  }
+
+  .bottomProducts {
+    width: 100%;
+  }
+  .productsDesc {
+    margin-left: 0;
+    padding: 0 5px;
+  }
+  .productMainLeftImagesMobile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .productMain {
+    flex-direction: column;
+  }
+  .productsMainMainImg {
+    /* width: 200px;
+        height: 300px; */
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .productsMainMainImg > img {
+    /* width: 200px;
+        height: 300px; */
+    width: 100%;
+  }
+  .leftImgs {
+    width: 18%;
+    margin: 0 0.8%;
+  }
+  .productMainLeftImages {
+    display: none;
+  }
+  .productsDesc {
+    width: 100%;
+  }
+}
