@@ -1,5 +1,5 @@
 module.exports = {
   env: {
-    API: "http://localhost:5000",
+    API: "https://yildirim-shop.herokuapp.com",
   },
 };
