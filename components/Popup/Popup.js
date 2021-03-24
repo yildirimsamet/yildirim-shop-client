@@ -18,7 +18,8 @@ const Popup = ({ setCantGo }) => {
       </div>
       <div className={stlyes.popupContent}>
         Site henüz yapım aşamasındadır. Gerçekleşecek bir proje degildir ve
-        ürünler sahtedir. Alışveriş yapılamaz kart bilgisi istemez.
+        ürünler sahtedir. Alışveriş yapılamaz kart bilgisi istemez. İlk girişte
+        api biraz bekletebilir ücretsiz malum {":)"}
       </div>
     </div>
   );

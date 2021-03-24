@@ -1,6 +1,6 @@
 import styles from "./Aside.module.css";
 import { Button } from "@material-ui/core";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ProductContext from "../../contexts/ProductContext";
 const useStyles = makeStyles({

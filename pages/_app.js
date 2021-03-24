@@ -33,6 +33,7 @@ export default function MyApp(props) {
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <Popup setCantGo={setCantGo} />
+
         <Layout
           style={
             cantGo

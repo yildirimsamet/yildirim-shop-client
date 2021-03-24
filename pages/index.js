@@ -1,5 +1,5 @@
-import { Grid, Typography } from "@material-ui/core";
-import { useState, useEffect, useContext } from "react";
+import { Grid } from "@material-ui/core";
+import { useContext } from "react";
 import ProductCard from "../components/ProductCard/ProductCard";
 import ProductContext from "../contexts/ProductContext";
 import InfiniteScroll from "react-infinite-scroll-component";

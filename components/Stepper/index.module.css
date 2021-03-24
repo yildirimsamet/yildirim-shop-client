@@ -1,0 +1,27 @@
+.singleProduct {
+  display: flex;
+  margin-bottom: 15px;
+}
+.singleProductImg {
+  width: auto;
+  height: 160px;
+}
+.singleProductDesc {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.singleProductDesc p {
+  margin: 0;
+}
+.products {
+  display: flex;
+}
+.productsLeft,
+.productsRight {
+  width: 50%;
+}
+.productsRight > h3 {
+  margin: 0;
+}

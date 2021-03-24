@@ -179,6 +179,7 @@ export default function ButtonAppBar() {
     } catch (error) {}
   }, [userMenuOpened]);
   useEffect(() => {
+    console.log(basket);
     try {
       const basketMenuEl = document.getElementById("basketMenu");
 
@@ -260,6 +261,21 @@ export default function ButtonAppBar() {
                         router.push("/register");
                         setBasketMenuOpened(false);
                       }
+                      const order = basket.map((item) => ({
+                        count: item.count,
+                        pId: item.itemId,
+                      }));
+                      fetch(process.env.API + "/user/createOrder", {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
+                          token: localStorage.getItem("token"),
+                        },
+                        body: JSON.stringify({ order }),
+                      })
+                        .then((res) => res.json())
+                        .then((res) => console.log(res));
+                      router.push("/payment");
                     }}
                     className={classes.payButton}
                     variant="contained"

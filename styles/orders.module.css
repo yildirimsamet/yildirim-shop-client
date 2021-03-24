@@ -1,0 +1,22 @@
+.orderWrapper {
+  border: 1px solid grey;
+  padding: 15px;
+  margin-top: 15px;
+}
+.singleProduct {
+  display: flex;
+  margin: 5px 0;
+}
+.singleProduct > img {
+  width: 50px;
+  height: 75px;
+}
+.singleProduct p {
+  margin: 0;
+}
+.singleProductRight {
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+}
